@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* utilities */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.space-5{
+    height: 5px;
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .space-10{
+    height: 10px;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .space-20{
+    height: 20px;
+    width: 100%;
   }
+  .space-50{
+    height: 50px;
+    width: 100%;
+  }
+  .space-100{
+    height: 100px;
+    width: 100%;
+  }
+
+  .h6{
+    line-height: 27px;
+  }
+
+
+/* ============== */
+.text-now{
+    color: #c42f48;
 }
+
+.bg-black{
+  background-color: #000000;
+}
+
+/* ============== */
+
+.logo img{
+    width: 100px;   
+}
+
+.nav-bar{
+    margin: auto;
+    z-index: 10000;
+}
+
+
+/* ==================== */
+
+.menu-box{
+  position: fixed;
+  z-index: 3000;
+  background-color: #141414;
+  width: 30%;
+  height: 105vh;
+  left: 50%;
+  transform: translate(-50%, -5vh);
+ 
+}
+
+.menu-link{
+  max-width: 300px;
+  margin: auto;
+  transition: transform 0.3s ease
+}
+
+.menu-link-underline{
+  margin-top: 20px;
+  position: relative;
+  height: 3px;
+  width: 0px;
+  background-color: #f5db4a;
+  transition: width 0.3s ease-in-out;
+  transform: translateY(-35px);
+}
+
+.menu-link:hover .menu-link-underline{
+  width: 100%;
+
+}
+
+.menu-link:hover{
+  transform: scale(1.5);
+  color: #f8c74c;
+  text-decoration: none;
+  /* color: #e1e1e1; */
+}
+
+/* ======================================= */
